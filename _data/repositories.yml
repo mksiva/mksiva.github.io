@@ -1,10 +1,9 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - mksiva
 
 github_repos:
   - alshedivat/al-folio
-  - twbs/bootstrap
+  - mksiva/tree
   - jekyll/jekyll
   - jquery/jquery
   - FortAwesome/Font-Awesome
