@@ -1,26 +1,14 @@
-source 'https://rubygems.org'
-group :jekyll_plugins do
-    gem 'classifier-reborn'
-    gem 'jekyll'
-    gem 'jekyll-archives'
-    gem 'jekyll-email-protect'
-    gem 'jekyll-feed'
-    gem 'jekyll-get-json'
-    gem 'jekyll-imagemagick'
-    gem 'jekyll-jupyter-notebook'
-    gem 'jekyll-link-attributes'
-    gem 'jekyll-minifier'
-    gem 'jekyll-paginate-v2'
-    gem 'jekyll-scholar'
-    gem 'jekyll-sitemap'
-    gem 'jekyll-toc'
-    gem 'jekyll-twitter-plugin'
-    gem 'jemoji'
-    gem 'mini_racer'
-    gem 'unicode_utils'
-    gem 'webrick'
+source "https://rubygems.org"
+
+gem "jekyll", "~> 4.2.0"
+
+# Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem and associated library.
+platforms :mingw, :x64_mingw, :mswin, :jruby do
+  gem "tzinfo", "~> 1.2"
+  gem "tzinfo-data"
 end
-group :other_plugins do
-    gem 'feedjira'
-    gem 'httparty'
-end
+
+gem "webrick", "~> 1.7"
+gem 'html-proofer'
+gem 'jekyll-gist'
+gem 'rouge'
